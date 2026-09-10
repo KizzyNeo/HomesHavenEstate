@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homes Haven Estate. One of the most reliable real estate companies 
+    in Nigeria. We sell affordable and good lands. Best real estate company. Buy a property. House for sale. Land for sale.">
+    <title>Homes Haven Estate</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <style>
+        @keyframes FadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+}
+@keyframes fadeInText {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#loader {
+    border: 12px solid #444444;
+    border-radius: 50%;
+    border-top: 12px solid #206C48;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.fade-in-element {
+    animation: FadeIn 500ms;
+}
+.fadeInText {
+    animation: fadeInText 300ms 0ms forwards;
+}
+#slider {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+        .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 14px;
+  height: 2px;
+  background-color: #206C48;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -6px) rotate(45deg);
+}
+#menu li {
+    font-size: 2vw;
+    padding: 10px;
+    font-weight: 800;
+    width: 100%;
+}
+#menu a li:hover{
+    width: 100%;
+    background-color: #206C48;
+    color: white;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#lgr-menu {
+    display: none;
+}
+#logo {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #206C48;
+}
+.service_icon {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 5px;
+}
+.service {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading {
+    font-size: 2vw;
+}
+.description {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 800;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+#contact_container {
+    margin-left: 5px;
+    margin-top: 50px;
+}
+#contact_header {
+    font-size: 2vw;
+    font-weight: 800;
+}
+.contact {
+    width: 3vw;
+    height: 3vw;
+    margin-left: 10px;
+}
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+#copyright_container {
+    text-align: center; 
+    margin-top: 100px;
+}
+#copyright {
+    font-size: 1vw;
+    color: black;
+}
+#ql_container {
+    text-align: center;
+}
+#ql_header {
+    font-size: 2vw;
+}
+#ql_container3 {
+    list-style-type: none;
+    text-align: center;
+    display: flexbox;
+    margin: auto;
+    width: 100%;
+}
+.ql {
+    font-size: 2vw;
+    font-weight: 800;
+    width: 50%;
+}
+@media only screen and (min-width: 768px) {
+    #lgr-menu {
+        display: inline;
+    }
+    #lgr-menu ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+#lgr-menu li {
+    margin-top: 5px;
+    margin-right: 40px;
+    padding: 2px;
+    font-size: 1vw;
+    font-weight: 800;
+}
+    .container {
+        display: none
+    }
+    #logo {
+        width: 60%;
+    }
+}
+    </style>
+</head>
+<body style="margin: 0px; color: #206C48;">
+    <!-- <div id="loader" class="center"></div> -->
+    <div style="display: flex; width: 100%;">
+    <div id="logo">
+        <img src="./images/realty2.png" alt="logo" width="50vw" height="50vw" style="margin: 2px;">
+    </div>
+    <div id="lgr-menu" style="color: #206C48; width: 50%;">
+        <ul style="float: right; width: 100%;">
+            <a href="index.html"><li class="menu_item">Home</li></a>
+            <a href="properties.html"><li class="menu_item">Properties</li></a>
+            <a href="sign_up.html"><li class="menu_item">Login/Sign Up</li></a>
+            <a href="agent.html"><li class="menu_item">Become an Agent</li></a>
+            <a href="about.html"><li class="menu_item">About Us</li></a>
+        </ul>
+    </div>
+    <div class="container" onclick="myFunction(this)" style="float: right; margin: 10px;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      </div>
+    <div class="fade-in-element" id="menu" style="background-color: white; color: #206C48; width: 100%; 
+    height: fit-content; display: none; position: absolute;
+     margin-top: 0px; z-index: 999;">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="properties.html"><li>Properties</li></a>
+            <a href="sign_up.html"><li>Login/Sign Up</li></a>
+            <a href="agent.html"><li>Become an Agent</li></a>
+            <a href="about.html"><li>About Us</li></a>
+        </ul>
+    </div>
+    <div style="position: relative; text-align: center;">
+        <img class="fade-in-element" src="./images/beautiful-landscape-with-clear-sky (1).jpg" alt="photo_of_a_land" style="width: 100%; height: 100%;">
+    </div>
+    <div>
+        <h1 style="text-align: center; margin-top: 10px; font-size: 2vw;">Welcome to Homes Haven Estate</h1>
+        <p style="text-align: center; justify-content: center; padding: 5px; font-weight: 500; font-size: 2vw;">A real estate company you can trust to deliver exceptionally.
+            We'll help you secure lands and other landed properties in Nigeria with many benefits such as; affordable prices, 
+            good situations, authentic and close to valued infrastuctures/landmarks. <br />
+            We also ensure you get a registered survey plan and everything needed to make you enjoy your properties on a long-term.
+        </p>
+    </div>
+    <div style="text-align: center;">
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./properties.html'">
+            View Properties
+        </button>
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./sign_up.html'">
+            Purchase a Land
+        </button>
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./agent.html'">
+            Become an Affliate
+        </button>
+    </div>
+    <div class="slideshow-container" style="text-align: center; margin-left: auto; margin-right: auto; border-radius: 5%; height: fit-content; background-color: white; padding: 10px; width: 80%;">
+        <h3 style="font-size: 2vw; color: #206C48;">Why Should You Buy From Homes Haven Estate?</h3>
+        <div style="display: flex; margin-bottom: 10px;">
+            <img src="./images/realtylawyer.png" alt="An Expert Lawyer" style="width: 45%; height: fit-content; border: 2px solid #206C48; margin-right: 5px;">
+            <ul style="font-size: 2vw; width: 50%;">
+                <li>Our properties are "legally verified" under the professional guidance of our "Property Law Consultant", Barr. Goodness O. Akudinobi.</li>
+                <li>All our estates are strategically located in areas with "Rapid Development."</li>
+                <li>We're a registered company in Nigeria (RC:7835571).</li>
+                <li>You're not just buying a piece of land, you're buying "Peace of Mind."</li>
+                <li>We've served many satisfied clients in Nigeria and overseas.</li>
+                <li>We sell at great prices!</li>
+            </ul>
+        </div>
+                    <div class="mySlides fade">
+                        <img src="./images/home3.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                        <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                            <p style="color: #206C48; font-size: 2vw;">
+                                Legacy and Heritage: Buying lands can be a way to create a lasting legacy for your family or to preserve a piece of history.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="mySlides fade">
+            <img src="./images/image4.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+            <div style="width: 100%; font-weight: 800;">
+                <p style="color: #206C48; font-size: 2vw;">
+                    Appreciation: Land values tend to appreciate over time, making it a potentially lucrative 
+                    long-term investment.
+                </p>
+            </div>
+            </div>
+                        <div class="mySlides fade">
+                            <img src="./images/image11.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                            <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                                <p style="color: #206C48; font-size: 2vw;">
+                                   Diversify Your Portfolio: Adding land to your investmeent portfolio can help spread risk and increase potential returns.
+                                </p>
+                            </div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="./images/home1.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                                <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                                    <p style="color: #206C48; font-size: 2vw;">
+                                       Tangible Asset: Land is a tangible asset, providing a physical presence and a sense of control.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="mySlides fade">
+                    <img src="./images/image7.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                    <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                        <p style="color: #206C48; font-size: 2vw;">
+                            Tax Benefits: Land owners can provide tax deductions for property taxes, mortgage interest, and operating expenses.
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                <img src="./images/image3.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                    <p style="color: #206C48; font-size: 2vw;">
+                        Rental Income: You can lease your land to farmers, ranchers, or developers, generating passive income.
+                    </p>
+                </div>
+            </div>
+                <div class="mySlides fade">
+                    <img src="./images/home2.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                    <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                        <p style="color: #206C48; font-size: 2vw;">
+                            Privacy and Security: Land ownership can offer a sense of privacy and security, especially if you're loking to build a rural or a private estate.
+                        </p>
+                    </div>
+                    </div>
+                                <div class="mySlides fade">
+                                    <img src="./images/home4.jpg" alt="landed_property" style="width: 100%; height: 100%; border-radius: 5%;"> 
+                                    <div style="width: 100%; margin-top: 20px; font-weight: 800;">
+                                        <p style="color: #206C48; font-size: 2vw;">
+                                           Development opportunities: Buying land in an area with growth potential can lead to future development opportunities, such as building homes, commercial properties, or infrastructure projects.
+                                        </p>
+                                    </div>
+                                    </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    <div>
+        <div>
+            <h2 style="font-size: 3vw; text-align: center;">Our Services</h2>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/development.png" alt="property_dev_icon">Property Development:</h3>
+            <p class="description">
+                We're open to help you plan, design and construct new properties. Creating top-notch properties is always our pleasure.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/legal.png" alt="legal_icon">Legal and Accounting:</h3>
+            <p class="description">
+                We have access to professional lawyers and accountants that can serve your properties' various legal and accounting needs.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/surveying.png" alt="surveying_icon">Land Surveys:</h3>
+            <p class="description">
+                We can help you survey your properties to determine boundaries and ensure good positioning.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/sales.png" alt="sales_icon">Sales and Marketing:</h3>
+            <p class="description">
+                We can help you advertise and sell your properties. We also ensure smooth and secure transactions.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/brokerage.png" alt="brokerage_icon">Brokerage:</h3>
+            <p class="description">
+                We manage properties' paperworks while ensuring you buy or sell exactly what you want to.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/mentainance.png" alt="management_icon">Property Management:</h3>
+            <p class="description">
+                We can help ensure that your property is properly occupied, tenants screened, lease agreements created and rents collected.
+                We can also maintain the facilities in your property in order to ensure it retains quality.
+            </p>
+        </div>
+        <div class="service">
+            <h3 class="heading"><img class="service_icon" src="./images/consulting.png" alt="consultation_icon">Investment Consulting:</h3>
+            <p class="description">
+                We have a great team of experts who can offer advices on the best real estate investments to make and 
+                the right time to make them.
+            </p>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./properties.html'">
+            View Properties
+        </button>
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./sign_up.html'">
+            Purchase a Land
+        </button>
+        <button style="padding: 5px; border-radius: 10px; font-size: 2vw; color: white; background-color: #206C48; font-weight: 600; border: 2px solid white;" onclick="window.location='./agent.html'">
+            Become an Affliate
+        </button>
+    </div>
+    <div id="contact_container">
+        <h3 id="contact_header">Contact Us:</h3>
+        <div>
+            <a href="mailto:homeshavenrealtysolutionsltd@gmail.com"><img class="contact" src="./images/email_icon.png" alt="email_icon"></a>
+            <a href="tel:+2348060645005"><img class="contact" src="./images/phone_icon.png" alt="phone_icon"></a>
+            <a href="https://wa.me/+2348060645005"><img class="contact" src="./images/whatsapp logo.png" alt="whatsapp_icon"></a>
+        </div>
+    </div>
+    <div id="ql_container">
+        <h2 id="ql_header">Quick Links</h2>
+        <div id="ql_container2">
+            <ul id="ql_container3">
+                <a href="./properties.html"><li class="ql">Properties</li></a>
+                <a href="./sign_up.html"><li class="ql">Login/Sign Up</li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="copyright_container">
+    <small id="copyright">&copy; 2025 Homes Haven Realty Solutions</small>
+    </div>
+    <!-- <script>
+        var loader = document.getElementById("loader");
+window.addEventListener("load", function() {
+  loader.style.display = "none";
+})
+    </script> -->
+    <script src="script.js">
+        </script>
+</body>
+</html>

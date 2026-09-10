@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Real-Estate Property Inspection. Reach out to Homes Haven with request for inspection. We'll gladly attend to your request.">
+    <title>Book Inspection</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <style>
+        .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+li {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 800;
+    width: 100%;
+}
+a li:hover{
+    width: 100%;
+    background-color: white;
+    color: #206C48;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body style="margin: 0px; color: white; background-color: #206C48;">
+    <div style="display: flex; background-color: #206C48;">
+    <div style="background-color: #206C48; padding: 10px; width: 100%;">
+        <img src="./images/realty2.jpg" alt="logo" width="50px" height="50px" style="margin: 10px;">
+    </div>
+    <div class="container" onclick="myFunction(this)" style="float: right; margin: 10px;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      </div>
+    <div id="menu" style="background-color: #206C48; width: 100%; 
+    height: 50%; display: none; position: absolute; margin-top: 0px; z-index: 999;">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="properties.html"><li>Properties</li></a>
+            <a href="inspection.html"><li>Book an Inspection</li></a>
+            <a href="about.html"><li>About Us</li></a>
+        </ul>
+    </div>
+        <div>
+            <h1 style="text-align: center;">Book an Inspection</h1>
+            <p style="justify-content: center; padding: 5px; font-weight: 600;">We would love to help you secure a good land for your project. Kindly 
+                use the button below to tell us what you want and when you'll like 
+                to inspect any of our well-situated lands.
+            </p>
+        </div>
+        <div  style="background-color: white; margin-top: 50px; color: #206C48; margin-left: auto; margin-right: auto; width: fit-content; 
+        padding-top: 2px; padding-left: 10px; padding-right: 10px; padding-bottom: 2px; border-radius: 10%;" 
+        onclick="window.location.href='mailto:homeshavenrealtysolutionsltd@gmail.com?subject=Booking%20An%20Inspection&body=Hello,%0A%0AI%20will%20like%20to%20book%20an%20inspection%20at%20your%20company.';" style="color: #206C48;">
+            <h5>Book Inspection</h5>
+        </div>
+        <div style="text-align: center; margin-top: 200px;">
+            <small style="color: white;">&copy; Homes Haven Realty Solutions</small>
+            </div>
+    
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              var x = document.getElementById("menu");
+      if (x.style.display === "inline-block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "inline-block";
+      }
+            }
+            
+            </script>
+</body>
+</html>
